@@ -1,0 +1,12 @@
+
+To create Jar Files
+cd C:\Users\saika\Desktop\hotspot
+
+sbt assembly
+
+To run spark-submit
+cd %SPARK_HOME%
+
+
+.\bin\spark-submit C:\Users\saika\Desktop\hotspot\target\scala-2.11\CSE512-Hotspot-Analysis-Template-assembly-0.1.0.jar C:\Users\saika\Desktop\hotspot\test\output hotzoneanalysis C:\Users\saika\Desktop\hotspot\src\resources\point_hotzone.csv C:\Users\saika\Desktop\hotspot\src\resources\zone-hotzone.csv hotcellanalysis C:\Users\saika\Desktop\hotspot\src\resources\yellow_trip_sample_100000.csv
+
